@@ -27,6 +27,7 @@ namespace JurisTempus.Controllers
     {
       var result = _context.Clients
         .Include(c => c.Address)
+        .Include(c => c.Invoices)
         .ToArray();
       var viewModel = _mapper.Map<ClientViewModel[]>(result);
 
@@ -41,7 +42,24 @@ namespace JurisTempus.Controllers
         .Where(c => c.Id == id)
         .FirstOrDefaultAsync();
 
-      return View(result);
+      return View(_mapper.Map<ClientViewModel>(result));
+    }
+
+    [HttpPost("editor/{id:int}")]
+    public async Task<IActionResult> ClientEditor(int id, ClientViewModel model)
+    {
+      // Save changes to the Database
+      var oldClient = await _context.Clients
+        .Where(c => c.Id == id).FirstOrDefaultAsync();
+
+      if(oldClient != null)
+      {
+        // Update the Database
+        _mapper.Map(model, oldClient); // Copy changes
+
+      }
+
+      return View();
     }
 
     [HttpGet("timesheet")]

@@ -3142,7 +3142,7 @@ Zone.__load_patch('PromiseRejectionEvent', (global, Zone) => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\courses\PS\Models\Examples\Exemplar\JurisTempus\JurisTempus\client\polyfills.ts */"./client/polyfills.ts");
+module.exports = __webpack_require__(/*! D:\Workspace\GitHub\BestPracticesAspNetCore\src\JurisTempus\client\polyfills.ts */"./client/polyfills.ts");
 
 
 /***/ })

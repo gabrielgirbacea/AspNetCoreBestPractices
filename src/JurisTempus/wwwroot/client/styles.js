@@ -338,7 +338,7 @@ module.exports = function (list, options) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\courses\PS\Models\Examples\Exemplar\JurisTempus\JurisTempus\client\styles.css */"./client/styles.css");
+module.exports = __webpack_require__(/*! D:\Workspace\GitHub\BestPracticesAspNetCore\src\JurisTempus\client\styles.css */"./client/styles.css");
 
 
 /***/ })

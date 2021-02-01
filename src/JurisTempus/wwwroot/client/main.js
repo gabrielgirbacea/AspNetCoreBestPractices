@@ -99,7 +99,7 @@ class AppComponent {
     ngOnInit() {
         this.theForm = this._formBldr.group({
             caseId: [""],
-            start: [new Date()],
+            workDate: [new Date()],
             timeSegments: [0],
             rate: [120.00],
             workDescription: [""]
@@ -334,7 +334,7 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().boot
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\courses\PS\Models\Examples\Exemplar\JurisTempus\JurisTempus\client\main.ts */"./client/main.ts");
+module.exports = __webpack_require__(/*! D:\Workspace\GitHub\BestPracticesAspNetCore\src\JurisTempus\client\main.ts */"./client/main.ts");
 
 
 /***/ })

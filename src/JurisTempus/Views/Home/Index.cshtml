@@ -11,6 +11,14 @@
       <div>@client.Name - @client.ContactName</div>
       <div>Ph: @client.Phone</div>
       <div>@client.CityTown - @client.StateProvince</div>
+
+      <ul>
+        @foreach (var clientCase in client.Cases)
+        {
+          <li>@clientCase.FileNumber</li>
+        }
+      </ul>
+      <a asp-action="ClientEditor" asp-route-id="@client.Id" class="btn btn-small btn-primary">Edit</a>
     }
   </div>
 </div>
